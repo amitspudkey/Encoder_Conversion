@@ -4,8 +4,8 @@ import io
 
 def main():
     print("Program: Preprocess CSV")
-    print("Release: 0.0.1")
-    print("Date: 2019-02-13")
+    print("Release: 0.0.2")
+    print("Date: 2019-03-26")
     print("Author: Brian Neely")
     print()
     print()
@@ -32,7 +32,7 @@ def main():
         with io.open(file_out, 'w', encoding=encoder_out) as f:
             f.write(text)
     except:
-        print("An error has occured. Please try again with another input encoder.")
+        print("An error has occured, this typically occurs due to the wrong input encoder being selected. Please try again with another input encoder.")
 
 
 def encoding_selection(statement):
